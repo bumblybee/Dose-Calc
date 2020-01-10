@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DoseCalc</title>
+    <link rel="icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/9b3e0b3f9f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container calculation-container">
+            <form action="#">
+
+                <ul id="calculations"></ul>
+
+
+                <button id=start-over>Start Over</button>
+            </form>
+        </div>
+        <div class="form-container dosage-container">
+            <form action="#">
+                <h1 class="form-title">Dosage Calculator</h1>
+                <label for="weight">Weight in Grams</label>
+                <input type="text" id="weight" autocomplete="off" />
+                <label for="percent">CBD or THC Percentage</label>
+                <input type="text" id="percent" autocomplete="off" />
+                <label for="servings">Servings</label>
+                <input type="text" id="servings" autocomplete="off" />
+
+                <button id="calculate">Calculate</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Your Results</h1>
+
+
+                </div>
+                <div class="overlay-panel overlay-right">
+
+                    <p>Enter weight in grams, total percentage of CBD or THC in flower, and number of servings
+                        (optional).</p>
+                    <!-- <button class="ghost" id="sign-up">Sign Up</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
