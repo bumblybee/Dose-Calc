@@ -14,7 +14,7 @@ function calculateTotals(e) {
     if (weight != "" && percentage != "") {
 
         const totalMg = (weight * percentage) * 10;
-        const servingMg = totalMg / servings;
+        const servingMg = Math.round(totalMg / servings);
 
         const liTotal = document.createElement("li");
         liTotal.appendChild(document.createTextNode(`${totalMg} mg in total`));
